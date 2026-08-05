@@ -1,6 +1,6 @@
-# GPT提链
+# GPT直链提链
 
-从 `PP提链` 单独拎出的 Session / accessToken 提链工具。
+Gpt的 Session / accessToken 提链工具。
 
 ## 启动
 
