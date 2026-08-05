@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT提链</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css?v=1" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">SESSION · PLUS · PH_SHORT</div>
+        <h1>GPT提链</h1>
+        <p>单独导入 ChatGPT Session JSON / accessToken，提取 PLUS · PH_SHORT 0 短链。</p>
+      </div>
+      <div class="top-actions">
+        <a class="ghost-link strong" href="https://chatgpt.com/auth/login" target="_blank" rel="noopener noreferrer">打开 ChatGPT</a>
+      </div>
+    </header>
+
+    <section class="panel direct-panel">
+      <div class="panel-head">
+        <span class="index">链</span>
+        <div>
+          <h2>直接导入 Session 提链 0 短链</h2>
+          <small>粘贴 ChatGPT Session JSON 或 accessToken 后直接提链 PLUS · PH_SHORT。</small>
+        </div>
+      </div>
+
+      <label class="field">
+        <span>Session JSON / accessToken</span>
+        <textarea id="accessToken" spellcheck="false" placeholder="粘贴包含 accessToken 的 Session JSON，或直接粘贴 accessToken"></textarea>
+      </label>
+
+      <div class="grid-2">
+        <label class="field">
+          <span>创建代理池 · US Checkout</span>
+          <textarea id="proxy1" spellcheck="false" placeholder="一行一个；用于创建 PH/PHP Checkout"></textarea>
+        </label>
+        <label class="field">
+          <span>优惠代理池 · TR 优惠</span>
+          <textarea id="proxy2" spellcheck="false" placeholder="一行一个；用于 checkout/update 优惠刷新，可空=同创建代理"></textarea>
+        </label>
+      </div>
+
+      <div class="grid-4">
+        <label class="field">
+          <span>尝试次数</span>
+          <input id="directMaxAttempts" type="number" min="1" max="200" value="20" />
+        </label>
+        <label class="field">
+          <span>支付路径</span>
+          <input id="planName" value="chatgptplusplan" readonly />
+        </label>
+        <label class="field">
+          <span>目标金额</span>
+          <input id="directTargetAmount" value="0" readonly />
+        </label>
+        <label class="field check-field">
+          <span>优惠</span>
+          <label><input id="usePromo" type="checkbox" checked /> US Checkout / TR 优惠</label>
+        </label>
+      </div>
+
+      <div class="button-row">
+        <button id="btnShortLink" class="primary" type="button">开始单独提链 0 短链</button>
+        <button id="btnCopyShort" type="button">复制短链</button>
+        <button id="btnCopyExternal" type="button">复制外链</button>
+        <button id="btnCopyDirectAll" type="button">复制全部成功</button>
+      </div>
+
+      <div class="result-grid">
+        <label class="field">
+          <span>短链结果</span>
+          <textarea id="shortUrl" spellcheck="false" readonly></textarea>
+        </label>
+        <label class="field">
+          <span>外链 / 跳转</span>
+          <textarea id="externalUrl" spellcheck="false" readonly></textarea>
+        </label>
+        <label class="field">
+          <span>Stripe Hosted</span>
+          <input id="stripeHostedUrl" readonly />
+        </label>
+        <label class="field">
+          <span>金额校验</span>
+          <input id="amountInfo" readonly />
+        </label>
+        <label class="field wide">
+          <span>批量结果</span>
+          <textarea id="directBatchResults" spellcheck="false" readonly></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel status-panel">
+      <div class="panel-head">
+        <span class="index">志</span>
+        <div>
+          <h2>状态</h2>
+          <small>只显示本次提链运行日志；不会保存 Session / Token。</small>
+        </div>
+      </div>
+      <div class="status-card">
+        <label>当前状态</label>
+        <b id="statusText">就绪</b>
+      </div>
+      <pre id="logBox" class="log-box">等待操作。</pre>
+    </section>
+  </main>
+
+  <div id="toastHost" class="toast-host"></div>
+  <script src="/static/app.js?v=1"></script>
+</body>
+</html>
